@@ -1,0 +1,42 @@
+# Book settings
+title                       : Universidad Técnica Particular de Loja.
+author                      : David Burneo, Carlos Castillo, Luis Daniel Erazo
+copyright                   : "2020"  # Copyright year to be placed in the footer
+logo                        : content/images/logo.png
+exclude_patterns            : []
+#######################################################################################
+# Execution settings
+execute:
+  execute_notebooks         : auto 
+  cache                     : ""
+  exclude_patterns          : []
+#######################################################################################
+# HTML-specific settings
+html:
+  favicon                   : ""
+  use_edit_page_button      : false
+  use_repository_button     : true 
+  use_issues_button         : false
+  extra_navbar              : Basado en uso de <a href="https://jupyterbook.org">Jupyter Book</a>.
+  extra_footer              : ""  # Will be displayed underneath the footer.
+  google_analytics_id       : ""  # A GA id that can be used to track book views.
+  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+  baseurl                   : https://github.com/lderazo1/FInal2B
+
+#######################################################################################
+# Launch button settings
+launch_buttons:
+  notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url             : https://mybinder.org  # The URL of the BinderHub (e.g., https://mybinder.org)
+  jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+
+repository:
+  url                       : https://github.com/lderazo1/jBook2doBimestre
+  path_to_book              : ""
+  branch                    : master
+#######################################################################################
+# Advanced and power-user settings
+sphinx:
+  extra_extensions          :   # A list of extra extensions to load by Sphinx.
+  config                    :   # key-value pairs to directly over-ride the Sphinx configuration

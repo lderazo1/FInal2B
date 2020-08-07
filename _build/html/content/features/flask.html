@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>6. Flask &#8212; Universidad Técnica Particular de Loja.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/mystnb.js"></script>
+    <script src="../../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://github.com/lderazo1/FInal2B/content/features/flask.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="9. GUnicorn + Ngnix" href="GUnicorn.html" />
+    <link rel="prev" title="1. LIbrerías utilizadas" href="librerias.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://github.com/lderazo1/FInal2B/content/features/flask.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Flask" />
+<meta property="og:description" content="Flask  forthebadge made-with-python  Imgur Build StatusDescripción  Flask es un marco de aplicación web WSGI ligero . Está diseñado para que comenzar sea rápido" />
+<meta property="og:image"       content="https://github.com/lderazo1/FInal2B/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Universidad Técnica Particular de Loja.</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro.html">
+   Desarrollo Segundo Bimestre
+  </a>
+ </li>
+</ul>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="librerias.html">
+   1. LIbrerías utilizadas
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="librerias.html#httplib2">
+   2. HTTPLIB2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="librerias.html#re">
+   3. RE
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="librerias.html#html">
+   4. HTML
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="librerias.html#yaml">
+   5. YAML
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   6. Flask
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#descripcion">
+   7. Descripción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#instalacion">
+   8. Instalación
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GUnicorn.html">
+   9. GUnicorn + Ngnix
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GUnicorn.html#nginx">
+   10. Nginx
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="GUnicorn.html#gunicorn">
+   11. GUnicorn
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="couchDB.html">
+   12. COUCHDB
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="couchDB.html#descripcion">
+   13. Descripción
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="couchDB.html#instalacion-linux">
+   14. Instalación (Linux)
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Basado en uso de <a href="https://jupyterbook.org">Jupyter Book</a>.
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content/features/flask.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/lderazo1/jBook2doBimestre"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> On this page
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="flask">
+<h1><span class="section-number">6. </span>Flask<a class="headerlink" href="#flask" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://www.python.org/"><img alt="forthebadge made-with-python" src="http://ForTheBadge.com/images/badges/made-with-python.svg" /></a></p>
+<p><img alt="Imgur" src="https://i.imgur.com/E3FqUTK.png?1" />
+<a class="reference external" href="https://travis-ci.com/lderazo1/FInal2B"><img alt="Build Status" src="https://travis-ci.com/lderazo1/FInal2B.svg?branch=master" /></a></p>
+</div>
+<div class="section" id="descripcion">
+<h1><span class="section-number">7. </span>Descripción<a class="headerlink" href="#descripcion" title="Permalink to this headline">¶</a></h1>
+<p>Flask es un marco de aplicación web WSGI ligero . Está diseñado para que comenzar sea rápido y fácil, con la capacidad de escalar a aplicaciones complejas. Comenzó como una simple envoltura alrededor de Werkzeug y Jinja y se ha convertido en uno de los marcos de aplicaciones web Python más populares.</p>
+<blockquote>
+<div><p>Flask ofrece sugerencias, pero no impone ninguna dependencia o diseño del proyecto. Depende del desarrollador elegir las herramientas y bibliotecas que desea utilizar. La comunidad ofrece muchas extensiones que facilitan la adición de nuevas funciones.</p>
+</div></blockquote>
+</div>
+<div class="section" id="instalacion">
+<h1><span class="section-number">8. </span>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h1>
+<p>Nos ubicamos en la terminal de nuestro Sistema Operativo y colocamos la siguiente sentencia.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install -U Flask
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Se recomienda el uso de entornos virtuales para el control de versiones de librerías en ejecución</p>
+</div>
+<div class="section" id="metodos-utilizados">
+<h2><span class="section-number">8.1. </span>Métodos Utilizados<a class="headerlink" href="#metodos-utilizados" title="Permalink to this headline">¶</a></h2>
+<p>Algunos de los métodos que hemos utilizado se muestran a continuación:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Función</p></th>
+<th class="head"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>render_template ()</p></td>
+<td><p>Utilizado para renderizar plantillas. Como parámetros se proporciona el nombre de la plantilla y las variables que desea pasar al motor de templates como argumentos de palabras clave.</p></td>
+</tr>
+<tr class="row-odd"><td><p>route()</p></td>
+<td><p>URL que activar a las funciones</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="uso">
+<h2><span class="section-number">8.2. </span>Uso<a class="headerlink" href="#uso" title="Permalink to this headline">¶</a></h2>
+<p>Renderización de plantilla que primero fue ordenada por hora y fecha.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="k">return</span> render_template<span class="o">(</span><span class="s1">&#39;report.html&#39;</span>, <span class="nv">reports</span> <span class="o">=</span> posts, <span class="nv">courseName</span> <span class="o">=</span> posts<span class="o">[</span><span class="m">0</span><span class="o">][</span><span class="s1">&#39;courseName&#39;</span><span class="o">]</span>, <span class="nv">courseID</span> <span class="o">=</span> posts<span class="o">[</span><span class="m">0</span><span class="o">][</span><span class="s1">&#39;courseID&#39;</span><span class="o">])</span>
+</pre></div>
+</div>
+<p>Renderización de plantilla ordenada por nombre de curso.</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nv">posts</span> <span class="o">=</span> sorted<span class="o">(</span>posts, <span class="nv">key</span><span class="o">=</span>lambda post : post<span class="o">[</span><span class="s1">&#39;courseName&#39;</span><span class="o">])</span>
+<span class="k">return</span> render_template<span class="o">(</span><span class="s1">&#39;index.html&#39;</span>, <span class="nv">posts</span> <span class="o">=</span> posts, <span class="nv">coursesTotal</span> <span class="o">=</span> len<span class="o">(</span>posts<span class="o">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/features"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="librerias.html" title="previous page"><span class="section-number">1. </span>LIbrerías utilizadas</a>
+    <a class='right-next' id="next-link" href="GUnicorn.html" title="next page"><span class="section-number">9. </span>GUnicorn + Ngnix</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By David Burneo, Carlos Castillo, Luis Daniel Erazo<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../../_static/js/index.js"></script>
+    
+  </body>
+</html>
