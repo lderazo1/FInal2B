@@ -1,15 +1,15 @@
-# COUCHDB
+# CouchDB
 
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ![Imgur](https://i.imgur.com/QIqqSen.png)
 [![Build Status](https://travis-ci.com/lderazo1/FInal2B.svg?branch=master)](https://travis-ci.com/lderazo1/FInal2B)
-# Descripción
+## Descripción
 
 Apache CouchDB es uno de los nuevos sistemas de gestión de bases de datos. Su arquitectura interna es tolerante a fallas, y las fallas ocurren en un ambiente controlado y se tratan con elegancia. Los problemas individuales no se propagan en cascada a través de un sistema de servidor completo, sino que permanecen aislados en solicitudes únicas.
 Creemos que CouchDB cambia drásticamente la forma en que crea aplicaciones basadas en documentos. CouchDB combina un modelo de almacenamiento de documentos intuitivo con un potente motor de consultas de una manera simple.
 
-# Instalación (Linux)
+## Instalación (Linux)
 1. Actualizar el repositorio local del administrador de paquetes apt
 ```sh
 $ sudo apt-get update
@@ -57,7 +57,6 @@ reemplezar dominio por el dominio establecido en la configuración inicial, para
 Toma una tabla HTML existente y le agrega funcionalidad. También puede extraer datos de un JSON remoto y crear tablas sobre la marcha. Es una característica útil. Aunque para grandes conjuntos de datos no funciona, ya que todo el conjunto de datos se extrae de una vez. Para tales conjuntos de datos, DataTable admite el procesamiento del lado del servidor.
 
 ## Vistas
-
 Algunos propósitos de las vistas son los siguientes
 * Filtrar los documentos en su base de datos para encontrar aquellos relevantes para un proceso en particular.
 * Extraer datos de sus documentos y presentarlos en un orden específico.

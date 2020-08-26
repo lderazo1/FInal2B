@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Flask &#8212; Universidad Técnica Particular de Loja.</title>
+    <title>Flask &#8212; Universidad Técnica Particular de Loja</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
@@ -39,7 +39,7 @@
     <link rel="canonical" href="https://github.com/lderazo1/FInal2B/content/features/flask.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="GUnicorn + Ngnix" href="GUnicorn.html" />
+    <link rel="next" title="CouchDB" href="couchDB.html" />
     <link rel="prev" title="LIbrerías utilizadas" href="librerias.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,7 +50,7 @@
 <meta property="og:url"         content="https://github.com/lderazo1/FInal2B/content/features/flask.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Flask" />
-<meta property="og:description" content="Flask  forthebadge made-with-python  Imgur Build StatusDescripción  Flask es un marco de aplicación web WSGI ligero . Está diseñado para que comenzar sea rápido" />
+<meta property="og:description" content="Flask  forthebadge made-with-python  Imgur  Build Status  Descripción  Flask es un marco de aplicación web WSGI ligero . Está diseñado para que comenzar sea ráp" />
 <meta property="og:image"       content="https://github.com/lderazo1/FInal2B/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -71,7 +71,7 @@
   <img src="../../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Universidad Técnica Particular de Loja.</h1>
+  <h1 class="site-logo" id="site-title">Universidad Técnica Particular de Loja</h1>
   
 </a>
 </div>
@@ -89,75 +89,51 @@
   </a>
  </li>
 </ul>
-<ul class="current nav sidenav_l1">
+<p class="caption">
+ <span class="caption-text">
+  Generalidades
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="librerias.html">
    LIbrerías utilizadas
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#httplib2">
-   HTTPLIB2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#re">
-   RE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#html">
-   HTML
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#yaml">
-   YAML
-  </a>
- </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Framework
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Flask
   </a>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  DataBase
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="#descripcion">
-   Descripción
+  <a class="reference internal" href="couchDB.html">
+   CouchDB
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#instalacion">
-   Instalación
-  </a>
- </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Servidor
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="GUnicorn.html">
    GUnicorn + Ngnix
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="GUnicorn.html#nginx">
-   Nginx
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="GUnicorn.html#gunicorn">
-   GUnicorn
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="couchDB.html">
-   COUCHDB
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="couchDB.html#descripcion">
-   Descripción
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="couchDB.html#instalacion-linux">
-   Instalación (Linux)
   </a>
  </li>
 </ul>
@@ -242,7 +218,29 @@
             <i class="fas fa-list"></i> On this page
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#descripcion">
+   Descripción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalacion">
+   Instalación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metodos-utilizados">
+   Métodos Utilizados
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#demostracion">
+   Demostración
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -254,18 +252,17 @@
   <div class="section" id="flask">
 <h1>Flask<a class="headerlink" href="#flask" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.python.org/"><img alt="forthebadge made-with-python" src="http://ForTheBadge.com/images/badges/made-with-python.svg" /></a></p>
-<p><img alt="Imgur" src="https://i.imgur.com/E3FqUTK.png?1" />
-<a class="reference external" href="https://travis-ci.com/lderazo1/FInal2B"><img alt="Build Status" src="https://travis-ci.com/lderazo1/FInal2B.svg?branch=master" /></a></p>
-</div>
+<p><img alt="Imgur" src="https://i.imgur.com/E3FqUTK.png?1" /></p>
+<p><a class="reference external" href="https://travis-ci.com/lderazo1/FInal2B"><img alt="Build Status" src="https://travis-ci.com/lderazo1/FInal2B.svg?branch=master" /></a></p>
 <div class="section" id="descripcion">
-<h1>Descripción<a class="headerlink" href="#descripcion" title="Permalink to this headline">¶</a></h1>
+<h2>Descripción<a class="headerlink" href="#descripcion" title="Permalink to this headline">¶</a></h2>
 <p>Flask es un marco de aplicación web WSGI ligero . Está diseñado para que comenzar sea rápido y fácil, con la capacidad de escalar a aplicaciones complejas. Comenzó como una simple envoltura alrededor de Werkzeug y Jinja y se ha convertido en uno de los marcos de aplicaciones web Python más populares.</p>
 <blockquote>
 <div><p>Flask ofrece sugerencias, pero no impone ninguna dependencia o diseño del proyecto. Depende del desarrollador elegir las herramientas y bibliotecas que desea utilizar. La comunidad ofrece muchas extensiones que facilitan la adición de nuevas funciones.</p>
 </div></blockquote>
 </div>
 <div class="section" id="instalacion">
-<h1>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h1>
+<h2>Instalación<a class="headerlink" href="#instalacion" title="Permalink to this headline">¶</a></h2>
 <p>Nos ubicamos en la terminal de nuestro Sistema Operativo y colocamos la siguiente sentencia.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install -U Flask
 </pre></div>
@@ -273,6 +270,7 @@
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Se recomienda el uso de entornos virtuales para el control de versiones de librerías en ejecución</p>
+</div>
 </div>
 <div class="section" id="metodos-utilizados">
 <h2>Métodos Utilizados<a class="headerlink" href="#metodos-utilizados" title="Permalink to this headline">¶</a></h2>
@@ -293,8 +291,8 @@
 </tbody>
 </table>
 </div>
-<div class="section" id="uso">
-<h2>Uso<a class="headerlink" href="#uso" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="demostracion">
+<h2>Demostración<a class="headerlink" href="#demostracion" title="Permalink to this headline">¶</a></h2>
 <p>Renderización de plantilla que primero fue ordenada por hora y fecha.</p>
 <div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="k">return</span> render_template<span class="o">(</span><span class="s1">&#39;report.html&#39;</span>, <span class="nv">reports</span> <span class="o">=</span> posts, <span class="nv">courseName</span> <span class="o">=</span> posts<span class="o">[</span><span class="m">0</span><span class="o">][</span><span class="s1">&#39;courseName&#39;</span><span class="o">]</span>, <span class="nv">courseID</span> <span class="o">=</span> posts<span class="o">[</span><span class="m">0</span><span class="o">][</span><span class="s1">&#39;courseID&#39;</span><span class="o">])</span>
 </pre></div>
@@ -336,7 +334,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="librerias.html" title="previous page">LIbrerías utilizadas</a>
-    <a class='right-next' id="next-link" href="GUnicorn.html" title="next page">GUnicorn + Ngnix</a>
+    <a class='right-next' id="next-link" href="couchDB.html" title="next page">CouchDB</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

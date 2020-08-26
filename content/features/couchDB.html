@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>COUCHDB &#8212; Universidad Técnica Particular de Loja.</title>
+    <title>CouchDB &#8212; Universidad Técnica Particular de Loja</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../../_static/sphinx-book-theme.css" type="text/css" />
@@ -39,7 +39,8 @@
     <link rel="canonical" href="https://github.com/lderazo1/FInal2B/content/features/couchDB.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="GUnicorn + Ngnix" href="GUnicorn.html" />
+    <link rel="next" title="GUnicorn + Ngnix" href="GUnicorn.html" />
+    <link rel="prev" title="Flask" href="flask.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -48,8 +49,8 @@
 <!-- Opengraph tags -->
 <meta property="og:url"         content="https://github.com/lderazo1/FInal2B/content/features/couchDB.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="COUCHDB" />
-<meta property="og:description" content="COUCHDB  forthebadge made-with-python  Imgur Build StatusDescripción  Apache CouchDB es uno de los nuevos sistemas de gestión de bases de datos. Su arquitectura" />
+<meta property="og:title"       content="CouchDB" />
+<meta property="og:description" content="CouchDB  forthebadge made-with-python  Imgur Build Status  Descripción  Apache CouchDB es uno de los nuevos sistemas de gestión de bases de datos. Su arquitectu" />
 <meta property="og:image"       content="https://github.com/lderazo1/FInal2B/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -70,7 +71,7 @@
   <img src="../../_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">Universidad Técnica Particular de Loja.</h1>
+  <h1 class="site-logo" id="site-title">Universidad Técnica Particular de Loja</h1>
   
 </a>
 </div>
@@ -88,75 +89,51 @@
   </a>
  </li>
 </ul>
-<ul class="current nav sidenav_l1">
+<p class="caption">
+ <span class="caption-text">
+  Generalidades
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="librerias.html">
    LIbrerías utilizadas
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#httplib2">
-   HTTPLIB2
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#re">
-   RE
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#html">
-   HTML
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="librerias.html#yaml">
-   YAML
-  </a>
- </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Framework
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="flask.html">
    Flask
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="flask.html#descripcion">
-   Descripción
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  DataBase
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   CouchDB
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="flask.html#instalacion">
-   Instalación
-  </a>
- </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Servidor
+ </span>
+</p>
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="GUnicorn.html">
    GUnicorn + Ngnix
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="GUnicorn.html#nginx">
-   Nginx
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="GUnicorn.html#gunicorn">
-   GUnicorn
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   COUCHDB
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#descripcion">
-   Descripción
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#instalacion-linux">
-   Instalación (Linux)
   </a>
  </li>
 </ul>
@@ -241,7 +218,39 @@
             <i class="fas fa-list"></i> On this page
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#descripcion">
+   Descripción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instalacion-linux">
+   Instalación (Linux)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#comandos">
+   Comandos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acceso">
+   Acceso
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#datatable">
+   DataTable
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vistas">
+   Vistas
+  </a>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -251,18 +260,17 @@
               <div>
                 
   <div class="section" id="couchdb">
-<h1>COUCHDB<a class="headerlink" href="#couchdb" title="Permalink to this headline">¶</a></h1>
+<h1>CouchDB<a class="headerlink" href="#couchdb" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference external" href="https://www.python.org/"><img alt="forthebadge made-with-python" src="http://ForTheBadge.com/images/badges/made-with-python.svg" /></a></p>
 <p><img alt="Imgur" src="https://i.imgur.com/QIqqSen.png" />
 <a class="reference external" href="https://travis-ci.com/lderazo1/FInal2B"><img alt="Build Status" src="https://travis-ci.com/lderazo1/FInal2B.svg?branch=master" /></a></p>
-</div>
 <div class="section" id="descripcion">
-<h1>Descripción<a class="headerlink" href="#descripcion" title="Permalink to this headline">¶</a></h1>
+<h2>Descripción<a class="headerlink" href="#descripcion" title="Permalink to this headline">¶</a></h2>
 <p>Apache CouchDB es uno de los nuevos sistemas de gestión de bases de datos. Su arquitectura interna es tolerante a fallas, y las fallas ocurren en un ambiente controlado y se tratan con elegancia. Los problemas individuales no se propagan en cascada a través de un sistema de servidor completo, sino que permanecen aislados en solicitudes únicas.
 Creemos que CouchDB cambia drásticamente la forma en que crea aplicaciones basadas en documentos. CouchDB combina un modelo de almacenamiento de documentos intuitivo con un potente motor de consultas de una manera simple.</p>
 </div>
 <div class="section" id="instalacion-linux">
-<h1>Instalación (Linux)<a class="headerlink" href="#instalacion-linux" title="Permalink to this headline">¶</a></h1>
+<h2>Instalación (Linux)<a class="headerlink" href="#instalacion-linux" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Actualizar el repositorio local del administrador de paquetes apt</p></li>
 </ol>
@@ -302,6 +310,7 @@ Creemos que CouchDB cambia drásticamente la forma en que crea aplicaciones basa
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Se muestra una interfaz donde se les solicitará la configuración inicial, recomendable standalone que es para realizar una configuración del servidor independiente.</p>
+</div>
 </div>
 <div class="section" id="comandos">
 <h2>Comandos<a class="headerlink" href="#comandos" title="Permalink to this headline">¶</a></h2>
@@ -378,7 +387,8 @@ Creemos que CouchDB cambia drásticamente la forma en que crea aplicaciones basa
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="GUnicorn.html" title="previous page">GUnicorn + Ngnix</a>
+    <a class='left-prev' id="prev-link" href="flask.html" title="previous page">Flask</a>
+    <a class='right-next' id="next-link" href="GUnicorn.html" title="next page">GUnicorn + Ngnix</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
