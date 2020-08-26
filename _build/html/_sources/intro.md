@@ -4,7 +4,7 @@
 
 ![](https://con.openedx.org/images/openedx-2020-logo.png)
 [![Build Status](https://travis-ci.com/lderazo1/FInal2B.svg?branch=master)](https://travis-ci.com/lderazo1/FInal2B)
-# Descripción
+## Descripción
 Las actividades desarrolladas durante el bimestre finalizado estuvieron enfocadas en complementar la versión inicial del manejo de cursos OpenEDX, esto con el objetivo de la adaptabilidad de contenidos para un sencillo manejo por parte del docente (implementación de reportes) así como el control de cambios para finalmente adjuntar los resultados en un dominio web. A continuación, se describe a profundidad los cambios realizados.
 
 Actividades lenguaje de programación Python:

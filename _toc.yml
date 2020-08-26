@@ -1,19 +1,18 @@
 - file: intro
-  title: Generalidades
   numbered: false
   
-- file: content/features/librerias
-  title: Manejo Python
-  numbered: false
-  
-- file: content/features/flask
-  title: Framework FLask
-  numbered: false
+- part: Generalidades
+  sections:
+  - file: content/features/librerias.md
 
-- file: content/features/GUnicorn
-  title: Servidor
-  numbered: false
-  
-- file: content/features/couchDB
-  title: Base de Datos CouchDB
-  numbered: false
+- part: Framework
+  sections:
+  - file: content/features/flask.md
+
+- part: DataBase
+  sections:
+  - file: content/features/couchDB.md
+
+- part: Servidor
+  sections:
+  - file: content/features/GUnicorn.md
