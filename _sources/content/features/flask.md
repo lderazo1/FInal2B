@@ -6,6 +6,10 @@
 
 [![Build Status](https://travis-ci.com/lderazo1/FInal2B.svg?branch=master)](https://travis-ci.com/lderazo1/FInal2B)
 
+```{contents}
+:depth: 2
+```
+
 ## Descripción
 Flask es un marco de aplicación web WSGI ligero . Está diseñado para que comenzar sea rápido y fácil, con la capacidad de escalar a aplicaciones complejas. Comenzó como una simple envoltura alrededor de Werkzeug y Jinja y se ha convertido en uno de los marcos de aplicaciones web Python más populares.
 
