@@ -4,6 +4,11 @@
 
 ![Imgur](https://i.imgur.com/QIqqSen.png)
 [![Build Status](https://travis-ci.com/lderazo1/FInal2B.svg?branch=master)](https://travis-ci.com/lderazo1/FInal2B)
+
+```{contents}
+:depth: 2
+```
+
 ## Descripción
 
 Apache CouchDB es uno de los nuevos sistemas de gestión de bases de datos. Su arquitectura interna es tolerante a fallas, y las fallas ocurren en un ambiente controlado y se tratan con elegancia. Los problemas individuales no se propagan en cascada a través de un sistema de servidor completo, sino que permanecen aislados en solicitudes únicas.
@@ -63,3 +68,11 @@ Algunos propósitos de las vistas son los siguientes
 * Creación de índices eficientes para buscar documentos por cualquier valor o estructura que resida en ellos.
 * Utilice estos índices para representar relaciones entre documentos.
 * Finalmente, con vistas puede hacer todo tipo de cálculos sobre los datos en sus documentos. Por ejemplo, si los documentos representan las transacciones financieras de su empresa, una vista puede responder a la pregunta de cuál fue el gasto en la última semana, mes o año.
+
+```{image} images/vista.png
+---
+scale: 40
+---
+```
+
+Implementación de Vista enfocada en el reporte de Cursos 
